@@ -1,0 +1,6 @@
+export const CrudConstant = {
+    ADD_USER: "ADD_USER",
+    UPDATE_USER_LIST: "UPDATE_USER_LIST",
+    FORCE_UPDATE: "FORCE_UPDATE",
+    UPDATE_USER: "UPDATE_USER",
+}
