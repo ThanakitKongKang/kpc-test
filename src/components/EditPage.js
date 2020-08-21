@@ -395,17 +395,18 @@ const EditPage = () => {
                         </Col>
                     </Row>
 
-
-                    <Form.Item>
-                        <Space>
-                            <Button onClick={cancel}>
-                                Cancel
+                    <Row justify="end">
+                        <Form.Item>
+                            <Space>
+                                <Button onClick={cancel}>
+                                    Cancel
                     </Button>
-                            <Button type="primary" htmlType="submit">
-                                Register
+                                <Button type="primary" htmlType="submit">
+                                    Edit
                     </Button>
-                        </Space>
-                    </Form.Item>
+                            </Space>
+                        </Form.Item>
+                    </Row>
                 </Form >
             </Col>
         </Row >

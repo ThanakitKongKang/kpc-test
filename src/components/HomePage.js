@@ -111,7 +111,6 @@ const EmpForm = () => {
                 values.key = "0"
             }
             addUser(values)
-            setDataSource([...userList])
             form.resetFields();
             setCitizenIDState({
                 showError: null,
@@ -446,12 +445,13 @@ const EmpForm = () => {
             </Col>
         </Row>
 
-
-        <Form.Item>
-            <Button type="primary" htmlType="submit">
-                Register
+        <Row justify="end">
+            <Form.Item>
+                <Button type="primary" htmlType="submit">
+                    Register
 </Button>
-        </Form.Item>
+            </Form.Item>
+        </Row>
     </Form >
 
     const rowSelection = {
@@ -472,7 +472,7 @@ const EmpForm = () => {
                     icon={<DeleteOutlined />}
                     danger
                 >
-                    Delete({selectedRowKeys.length})
+                    Delete ({selectedRowKeys.length})
                  </Button>
                 <Button
                     type={dataSource?.length !== 5 ? "primary" : null}
