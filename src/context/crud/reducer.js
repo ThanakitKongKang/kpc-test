@@ -12,7 +12,6 @@ export const CrudReducer = (state = {}, action) => {
                 forceUpdate: !state.forceUpdate,
             };
         case CrudConstant.UPDATE_USER_LIST:
-            console.log(JSON.stringify(action.data))
             action.data.length === 0 ? localStorage.removeItem("userList") : localStorage.setItem("userList", JSON.stringify(action.data))
             return {
                 ...state,
